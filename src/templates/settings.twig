@@ -1,0 +1,34 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * recaptcha plugin for Craft CMS 3.x
+ *
+ * recaptcha Settings.twig
+ *
+ * @author    OybekMamatkhanov
+ * @copyright Copyright (c) 2018 OybekMamatkhanov
+ * @link      https://github.com/OybekMamatkhanov/
+ * @package   Recaptcha
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("recaptcha\\recaptcha\\assetbundles\\recaptcha\\RecaptchaAsset") %}
+
+{{forms.textfield({
+    id: 'siteKey',
+    name: 'siteKey',
+    value: settings['siteKey'],
+    label: 'Site Key',
+    size: 30
+})}}
+
+{{forms.textfield({
+    id: 'secretKey',
+    name: 'secretKey',
+    value: settings['secretKey'],
+    label: 'Secret Key',
+    size: 30
+})}}

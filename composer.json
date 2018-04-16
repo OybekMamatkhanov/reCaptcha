@@ -1,0 +1,44 @@
+{
+    "name": "recaptcha/recaptcha",
+    "description": "recaptcha",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "recaptcha"
+    ],
+    "support": {
+        "docs": "https://github.com/recaptcha/recaptcha/blob/master/README.md",
+        "issues": "https://github.com/recaptcha/recaptcha/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "OybekMamatkhanov",
+            "homepage": "https://github.com/OybekMamatkhanov/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "recaptcha\\recaptcha\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "recaptcha",
+        "handle": "recaptcha",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/recaptcha/recaptcha/master/CHANGELOG.md",
+        "components": {
+            "verify": "recaptcha\\recaptcha\\services\\Verify",
+            "render": "recaptcha\\recaptcha\\services\\Render"
+        },
+        "class": "recaptcha\\recaptcha\\Recaptcha"
+    }
+}
