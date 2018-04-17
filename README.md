@@ -22,20 +22,17 @@ To install the plugin, follow these instructions.
 
 ## recaptcha Overview
 
--Insert text here-
+
 
 ## Configuring recaptcha
 
--Insert text here-
+
 
 ## Using recaptcha
 
--Insert text here-
+
 
 ## recaptcha Roadmap
 
-Some things to do, and ideas for potential features:
-
-* Release it
 
 Brought to you by [OybekMamatkhanov](https://github.com/OybekMamatkhanov/)
